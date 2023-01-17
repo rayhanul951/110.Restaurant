@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.food img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.food{
+    border: 2px solid red;
+    border-radius: 20px;
+}
+/* food will turn  under 576 px */
+@media screen and (max-width:576px) {
+   .food{
+    background-color: cadetblue;
+   } 
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+   .food{
+    background-color: rgb(148, 255, 60);
+   } 
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+   .food{
+    background-color: rgb(255, 164, 60);
+   } 
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+   .food{
+    background-color: rgb(72, 165, 226);
+   } 
+}
+
+@media screen and (min-width:1200px) and (max-width:1400px) {
+   .food{
+    background-color: rgb(250, 86, 86);
+   } 
+}
+
+@media screen and (min-width:1400px) {
+   .food{
+    background-color: rgb(159, 255, 180);
+   } 
+}
